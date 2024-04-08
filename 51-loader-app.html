@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        #loader
+        {
+            width: 100%;
+            height: 610px;
+            background: url(https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/c49c83ef51b0c4230f8f39560b8250a3-1596267998/navy_for-light_bg/make-animated-logo-loader-for-your-website.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+        }
+        #main-contect
+        {
+            width: 100%;
+            height: auto;
+            display: none;
+            position: relative;
+
+        }
+    </style>
+   
+</head>
+<body onload="mainFunction()">
+    <div id="loader"></div>
+    <section id="main-contect">
+
+    <h1>My Name is Twinkal.</h1>
+     </div>
+
+     <script>
+       var load;
+       function mainFunction()
+       {
+
+       load=setTimeout("display()",1000);
+
+       }
+ 
+      function display()
+      {
+       document.getElementById("main-contect").style="display:block !important";
+       document.getElementById("loader").style="display:none !important";
+      }
+
+      </script>
+</body>
+</html>
